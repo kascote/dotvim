@@ -39,7 +39,8 @@ set wildmode=list:longest,list:full
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.pyc,*.bak,*.jpg,*.png,*.gif
 set ruler                   " Always show current positions along the bottom
 set cmdheight=2             " the command bar is 2 high
-set number                  " turn on line numbers
+"set number                  " turn on line numbers
+set relativenumber          " turn relative numbers on"
 set numberwidth=5
 set lz                      " do not redraw while running macros (much faster) (LazyRedraw)
 set hid                     " you can change buffer without saving
@@ -166,6 +167,18 @@ let g:ctags_cmd = '"'.expand('~').'/bin/mtags"'
 command! Ctags silent execute '!'.g:ctags_cmd.' *.'.expand('%:e')
 "}}}
 "---[ Key Mappings ]------------------------------------------------------ {{{
+
+"disable cursor keys
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
+nmap º %
+
+"Map ESC to jj
+inoremap jj <Esc>
+
 map <Leader>4 :!bash
 map <Leader>6 :set number!<CR>
 map <Leader>7 :set hlsearch!<CR>
@@ -277,6 +290,27 @@ nmap <C-X> :b#<cr>
 cno $h e ~/
 cno $d e ~/Desktop/
 cno $j e ./
+
+" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+"  CommandLine Window
+" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+" enter cmdline-window by default with :, / and ?
+"nnoremap : q:i
+"vnoremap : q:i
+"nnoremap / q/i
+"vnoremap / q/i
+"nnoremap ? q?i
+"vnoremap ? q?i
+" allow leaving cmdline-window with <ESC>
+"au CmdwinEnter * nnoremap <buffer> <ESC> :q<cr>
+" allow normal cmdline :, / and ?
+"nnoremap q: :
+"vnoremap q: :
+"nnoremap q/ /
+"vnoremap q/ /
+"nnoremap q? ?
+"vnoremap q? ?
+
 
 "}}}
 "---[ Functions ]-------------------------------------------------------- {{{

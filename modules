@@ -19,5 +19,6 @@ git submodule add git://github.com/tpope/vim-markdown bundle/vm-markdown
 git submodule add git://github.com/tpope/vim-rails bundle/vim-rails
 git submodule add git://github.com/tpope/vim-surround bundle/vim-surround
 git submodule add git://github.com/tpope/vim-unimpaired bundle/vim-unimpaired
-git submodule add git://github.com/leshill/vim-json.git
+git submodule add git://github.com/leshill/vim-json.git bundle/vim-json
 git submodule add git://github.com/tsaleh/vim-align.git bundle/vim-align
+git submodule add git://github.com/Lokaltog/vim-powerline.git bundle/vim-powerline

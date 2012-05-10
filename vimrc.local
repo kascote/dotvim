@@ -36,7 +36,8 @@ set lsp=0                   " space it out a little more (easier to read)
 set wildmenu                " turn on wild menu
 set wildmode=list:longest,list:full
 "Ignore these files when completing names and in Explorer
-set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.pyc,*.bak,*.jpg,*.png,*.gif
+set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.pyc,*.bak,*.jpg,*.png,*.xpm,*.gif,.DS_Store,*.aux,*.out,*.toc
+
 set ruler                   " Always show current positions along the bottom
 set cmdheight=2             " the command bar is 2 high
 "set number                  " turn on line numbers
@@ -85,6 +86,7 @@ set mat=5                   " how many tenths of a second to blink matching brac
 set hlsearch                " highlight searchs
 set incsearch               " BUT do highlight as you type you search phrase
 set listchars=tab:\>-,trail:.,extends:>,precedes:<,eol:$,nbsp:º " what to show when I hit :set list
+set showbreak=↪
 "set lines=45
 "set columns=120
 set so=10                   " Keep 10 lines (top/bottom) for scope
@@ -136,6 +138,7 @@ else
 endif
 
 "}}}
+"
 "---[ File Explorer ]----------------------------------------------------- {{{
 let g:explVertical=1        " should I split verticially
 let g:explWinSize=40        " width of 35 pixels
@@ -180,10 +183,11 @@ nmap º %
 inoremap jj <Esc>
 
 map <Leader>4 :!bash
-map <Leader>6 :set number!<CR>
-map <Leader>7 :set hlsearch!<CR>
-map <Leader>8 :set list!<CR>
-map <Leader>9 :execute 'mksession! ' . v:this_session<CR>
+map <Leader>5 :set invpaste<CR>
+map <Leader>6 :set invnumber<CR>
+map <Leader>7 :set invhlsearch<CR>
+map <Leader>8 :set invlist<CR>
+map <Leader>9 :set invrelativenumber<CR>
 "----------
 nmap <silent><Home>  :cal SmartHome("n")<CR>
 nmap <silent><End>   :cal SmartEnd("n")<CR>

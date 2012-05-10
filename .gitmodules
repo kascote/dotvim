@@ -61,9 +61,6 @@
 [submodule "bundle/vim-unimpaired"]
   path = bundle/vim-unimpaired
   url = git://github.com/tpope/vim-unimpaired
-[submodule "vim-json"]
-	path = vim-json
-	url = git://github.com/leshill/vim-json.git
 [submodule "bundle/vim-smartinput"]
 	path = bundle/vim-smartinput
 	url = git://github.com/kana/vim-smartinput.git

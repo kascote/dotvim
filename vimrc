@@ -2,7 +2,7 @@ call pathogen#infect()
 
 set nocompatible
 
-set number
+"set number
 set ruler
 syntax on
 
@@ -15,7 +15,8 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set list listchars=tab:\ \ ,trail:·
+"set list
+set listchars=tab:\ \ ,trail:·
 
 " Searching
 set hlsearch

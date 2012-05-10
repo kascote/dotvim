@@ -40,7 +40,7 @@ set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.py
 set ruler                   " Always show current positions along the bottom
 set cmdheight=2             " the command bar is 2 high
 "set number                  " turn on line numbers
-set relativenumber          " turn relative numbers on"
+"set relativenumber          " turn relative numbers on"
 set numberwidth=5
 set lz                      " do not redraw while running macros (much faster) (LazyRedraw)
 set hid                     " you can change buffer without saving

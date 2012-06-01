@@ -169,6 +169,13 @@ set diffopt=filler,iwhite
 let g:ctags_cmd = '"'.expand('~').'/bin/mtags"'
 command! Ctags silent execute '!'.g:ctags_cmd.' *.'.expand('%:e')
 "}}}
+"---[ Supertab ]---------------------------------------------------------- {{{
+"let g:SuperTabDefaultCompletionType = "context"
+"let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+"let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
+"let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
+"}}}
+
 "---[ Key Mappings ]------------------------------------------------------ {{{
 
 "disable cursor keys
@@ -395,6 +402,12 @@ autocmd BufWritePre * :call <SID>Preserve("%s/\\s\\+$//e")
 
 autocmd BufNewFile,BufRead *.rss setfiletype xml
 autocmd BufNewFile,BufRead *.atom setfiletype xml
+
+autocmd FileType *
+  \ if &omnifunc != '' |
+  \   call SuperTabChain(&omnifunc, "<c-p>") |
+  \   call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
+  \ endif
 
 runtime! ftdetect/*.vim
 "}}}

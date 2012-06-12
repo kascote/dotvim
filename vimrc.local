@@ -131,9 +131,9 @@ if has("gui_running")
   else
     set guifont=Inconsolata:h14
   endif
-  colorscheme jellybeans+
+  colorscheme molokai2 "jellybeans+
 else
-  colorscheme jellybeans+
+  colorscheme molokai2 "jellybeans+
   "solarized jellybeans+ lucius_nel peaksea vividchalk_nel
 endif
 

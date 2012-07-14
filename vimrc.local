@@ -125,6 +125,7 @@ set foldclose=all           " Autoclose folds, when moving out of them
 "set nofoldenable            " don't fold by default
 "}}}
 "---[ Theme / Colors ]---------------------------------------------------- {{{
+let g:molokai_original=1
 if has("gui_running")
   if has('unix')
     set guifont=Inconsolata:h14
@@ -175,6 +176,11 @@ command! Ctags silent execute '!'.g:ctags_cmd.' *.'.expand('%:e')
 "let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 "let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
 "}}}
+
+"---[ Mark ]-------------------------------------------------------------- {{{
+let g:mwDefaultHighlightingPalette = 'extended'
+"}}}
+
 
 "---[ Key Mappings ]------------------------------------------------------ {{{
 

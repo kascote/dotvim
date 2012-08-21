@@ -79,3 +79,6 @@
 [submodule "bundle/vim-google-closure-linter"]
 	path = bundle/vim-google-closure-linter
 	url = git://github.com/batsuev/google-closure-linter-for-vim.git
+[submodule "bundle/vimroom"]
+	path = bundle/vimroom
+	url = git://github.com/mikewest/vimroom.git

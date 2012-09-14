@@ -22,5 +22,9 @@ git submodule add git://github.com/tpope/vim-unimpaired bundle/vim-unimpaired
 git submodule add git://github.com/leshill/vim-json.git bundle/vim-json
 git submodule add git://github.com/tsaleh/vim-align.git bundle/vim-align
 git submodule add git://github.com/Lokaltog/vim-powerline.git bundle/vim-powerline
-git submodule add git://github.com/batsuev/google-closure-linter-for-vim.git bundle/vim-google-closure-linter
 git submodule add git://github.com/mikewest/vimroom.git bundle/vimroom
+
+
+# There is not efficient way to remove a submodule
+* first step is remove references to the submodule in .gitmodules and .git/config.
+* Then git rm --cached .vim/bundle/fugitive

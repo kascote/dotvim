@@ -130,9 +130,9 @@ end
 "
 if &t_Co > 255
    hi Boolean         ctermfg=135
-   hi Character       ctermfg=144
+   hi Character       ctermfg=184
    hi Number          ctermfg=135
-   hi String          ctermfg=144
+   hi String          ctermfg=184
    hi Conditional     ctermfg=161               cterm=bold
    hi Constant        ctermfg=135               cterm=bold
    hi Cursor          ctermfg=16  ctermbg=253
@@ -155,7 +155,7 @@ if &t_Co > 255
    hi Function        ctermfg=118
    hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
-   hi IncSearch       ctermfg=193 ctermbg=16
+   hi IncSearch       ctermfg=193 ctermbg=27
 
    hi Keyword         ctermfg=161               cterm=bold
    hi Label           ctermfg=229               cterm=none
@@ -168,8 +168,8 @@ if &t_Co > 255
    hi Operator        ctermfg=161
 
    " complete menu
-   hi Pmenu           ctermfg=81  ctermbg=16
-   hi PmenuSel                    ctermbg=244
+   hi Pmenu           ctermfg=81  ctermbg=27
+   hi PmenuSel        ctermfg=27  ctermbg=81
    hi PmenuSbar                   ctermbg=232
    hi PmenuThumb      ctermfg=81
 
@@ -177,7 +177,7 @@ if &t_Co > 255
    hi PreProc         ctermfg=118
    hi Question        ctermfg=81
    hi Repeat          ctermfg=161               cterm=bold
-   hi Search          ctermfg=253 ctermbg=66
+   hi Search          ctermfg=253 ctermbg=27
 
    " marks column
    hi SignColumn      ctermfg=118 ctermbg=235
@@ -204,12 +204,13 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
-   hi Normal          ctermfg=252 ctermbg=232
-   hi Comment         ctermfg=59
+   hi Normal          ctermfg=252 ctermbg=0
+   hi Comment         ctermfg=94
    hi CursorLine                  ctermbg=234   cterm=none
    hi CursorColumn                ctermbg=234
    hi ColorColumn                 ctermbg=234
    hi LineNr          ctermfg=250 ctermbg=234
    hi NonText         ctermfg=59
    hi SpecialKey      ctermfg=59
+
 end

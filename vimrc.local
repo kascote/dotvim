@@ -125,6 +125,7 @@ set foldclose=all           " Autoclose folds, when moving out of them
 "set nofoldenable            " don't fold by default
 "}}}
 "---[ Theme / Colors ]---------------------------------------------------- {{{
+let g:molokai_original=1
 if has("gui_running")
   if has('unix')
     set guifont=Inconsolata\ 12
@@ -178,6 +179,9 @@ command! Ctags silent execute '!'.g:ctags_cmd.' *.'.expand('%:e')
 
 "---[ Syntastic    ]------------------------------------------------------ {{{
 let g:syntastic_javascript_gjslint_conf=" --nojsdoc"
+
+"---[ Mark ]-------------------------------------------------------------- {{{
+let g:mwDefaultHighlightingPalette = 'extended'
 
 "---[ Key Mappings ]------------------------------------------------------ {{{
 

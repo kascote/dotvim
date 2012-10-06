@@ -128,7 +128,7 @@ set foldclose=all           " Autoclose folds, when moving out of them
 let g:molokai_original=1
 if has("gui_running")
   if has('unix')
-    set guifont=Inconsolata:h14
+    set guifont=Inconsolata\ 12
   else
     set guifont=Inconsolata:h14
   endif
@@ -177,10 +177,11 @@ command! Ctags silent execute '!'.g:ctags_cmd.' *.'.expand('%:e')
 "let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
 "}}}
 
+"---[ Syntastic    ]------------------------------------------------------ {{{
+let g:syntastic_javascript_gjslint_conf=" --nojsdoc"
+
 "---[ Mark ]-------------------------------------------------------------- {{{
 let g:mwDefaultHighlightingPalette = 'extended'
-"}}}
-
 
 "---[ Key Mappings ]------------------------------------------------------ {{{
 
@@ -252,8 +253,8 @@ map <Leader>e :e! ~/.vimrc<cr>
 map <Leader>cd :cd %:p:h<cr>
 "Remove the Windows ^M
 noremap <Leader>0 mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
-map <Leader>cn :cn<cr>
-map <Leader>cp :cp<cr>
+map <Leader>, :cn<cr>
+map <Leader>. :cp<cr>
 map <Leader>c :botright cw 10<cr>
 map <Leader><cr> :noh<cr>
 " Close the current buffer

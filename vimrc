@@ -45,9 +45,6 @@ let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 " Command-T configuration
 let g:CommandTMaxHeight=20
 
-" ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
-
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>

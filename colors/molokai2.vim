@@ -106,7 +106,7 @@ hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
 
 if s:molokai_original == 1
-   hi Normal          guifg=#F8F8F2 guibg=#272822
+   hi Normal          guifg=#F8F8F2 guibg=#000000
    hi Comment         guifg=#75715E
    hi CursorLine                    guibg=#3E3D32
    hi CursorColumn                  guibg=#3E3D32
@@ -204,12 +204,12 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
-   hi Normal          ctermfg=252 ctermbg=0
+   hi Normal          ctermfg=252 ctermbg=233
    hi Comment         ctermfg=94
-   hi CursorLine                  ctermbg=234   cterm=none
-   hi CursorColumn                ctermbg=234
-   hi ColorColumn                 ctermbg=234
-   hi LineNr          ctermfg=250 ctermbg=234
+   hi CursorLine                  ctermbg=233   cterm=none
+   hi CursorColumn                ctermbg=233
+   hi ColorColumn                 ctermbg=233
+   hi LineNr          ctermfg=250 ctermbg=233
    hi NonText         ctermfg=59
    hi SpecialKey      ctermfg=59
 

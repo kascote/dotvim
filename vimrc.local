@@ -21,6 +21,7 @@ filetype plugin indent on           " Enable file type detection.
 set tags=tags,vim_tags;~/           " Look for the file in the current directory, then south until you reach home.
 set timeoutlen=500                  " Quick timeouts on key combinations.
 set hidden                          " permit switch buffers without save it before
+set guicursor+=a:blinkon0           " remove blinking
 "}}}
 "---[ File / Bakcups ]---------------------------------------------------- {{{
 set nobackup                " remove backups after close

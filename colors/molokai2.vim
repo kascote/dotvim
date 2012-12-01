@@ -33,7 +33,8 @@ hi Number          guifg=#AE81FF
 hi String          guifg=#ECE47E
 hi Conditional     guifg=#F92672               gui=bold
 hi Constant        guifg=#AE81FF               gui=bold
-hi Cursor          guifg=#000000 guibg=#F8F8F0
+hi Cursor          guifg=#FFFF33 guibg=#FF0000
+hi iCursor         guifg=#FFFF33 guibg=#FF0000
 hi Debug           guifg=#BCA3A3               gui=bold
 hi Define          guifg=#66D9EF
 hi Delimiter       guifg=#8F8F8F
@@ -204,12 +205,12 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
-   hi Normal          ctermfg=252 ctermbg=233
+   hi Normal          ctermfg=252 ctermbg=232
    hi Comment         ctermfg=94
-   hi CursorLine                  ctermbg=233   cterm=none
-   hi CursorColumn                ctermbg=233
-   hi ColorColumn                 ctermbg=233
-   hi LineNr          ctermfg=250 ctermbg=233
+   hi CursorLine                  ctermbg=232   cterm=none
+   hi CursorColumn                ctermbg=232
+   hi ColorColumn                 ctermbg=232
+   hi LineNr          ctermfg=250 ctermbg=232
    hi NonText         ctermfg=59
    hi SpecialKey      ctermfg=59
 

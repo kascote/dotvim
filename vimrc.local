@@ -21,7 +21,6 @@ filetype plugin indent on           " Enable file type detection.
 set tags=tags,vim_tags;~/           " Look for the file in the current directory, then south until you reach home.
 set timeoutlen=500                  " Quick timeouts on key combinations.
 set hidden                          " permit switch buffers without save it before
-set guicursor+=a:blinkon0           " remove blinking
 "}}}
 "---[ File / Bakcups ]---------------------------------------------------- {{{
 set nobackup                " remove backups after close
@@ -73,14 +72,11 @@ if has('gui_running')
     set fuoptions=maxvert,maxhorz
   endif
 endif
-"set guicursor=
-"	\n:block-nCursor/lCursor-blinkwait700-blinkoff250-blinkon400,
-"	\c:block-Error/lCursor,
-"	\o:hor50-Error,
-"	\i-ci-v:block-nCursor,
-"	\r-cr:block-Cursor/lCursor,
-"	\sm:block-Cursor
-"}}}
+
+set guicursor=n-v-c:block-Cursor    " set block
+set guicursor+=a:blinkon0           " remove blinking
+set guicursor+=i:ver100             " set block for insert mode
+
 "---[ Visual Cues ]------------------------------------------------------- {{{
 set showmatch               " show matching brackets
 set mat=5                   " how many tenths of a second to blink matching brackets for

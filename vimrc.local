@@ -397,6 +397,7 @@ autocmd BufEnter *.rb map <Leader>rw :w<CR>:!ruby -cw %<CR>
 autocmd BufEnter *.rb map <Leader>rr :w<CR>:!ruby -w %<CR>
 autocmd BufEnter *.pl map <Leader>w :w<CR>:!perl -wc %<CR>
 autocmd BufEnter *.xml set equalprg=xmllint\ --format\ --recover\ -
+autocmd BufEnter *.json set equalprg=python\ -mjson.tool
 "When .vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vimrc
 " Remove trailing space before save

@@ -79,3 +79,6 @@
 [submodule "bundle/vimroom"]
 	path = bundle/vimroom
 	url = git://github.com/mikewest/vimroom.git
+[submodule "vim-json-bundle"]
+	path = vim-json-bundle
+	url = git://github.com/vim-scripts/vim-json-bundle.git

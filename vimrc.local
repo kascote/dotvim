@@ -124,16 +124,20 @@ set foldclose=all           " Autoclose folds, when moving out of them
 "---[ Theme / Colors ]---------------------------------------------------- {{{
 let g:molokai_original=1
 if has("gui_running")
-  if has('unix')
+  if has('win32')
+    " buuu
+  elseif has('mac')
+    set guifont=Inconsolata:h15
+  elseif has('unix')
     set guifont=Inconsolata\ 12
-  else
-    set guifont=Inconsolata:h14
   endif
   colorscheme molokai2 "jellybeans+
 else
   colorscheme molokai2 "jellybeans+
   "solarized jellybeans+ lucius_nel peaksea vividchalk_nel
 endif
+
+
 
 "}}}
 "
@@ -190,9 +194,6 @@ noremap <Right> <nop>
 
 nmap º %
 
-"Map ESC to jj
-inoremap jj <Esc>
-
 map <Leader>4 :!bash
 map <Leader>5 :set invpaste<CR>
 map <Leader>6 :set invnumber<CR>
@@ -226,10 +227,6 @@ map <c-h> <c-w>h
 
 nnoremap ' `
 nnoremap ` '
-
-" reflow paragraph with Q in normal and visual mode
-nnoremap Q gqap
-vnoremap Q gq
 
 " select the last changed/pasted text
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
@@ -274,32 +271,6 @@ map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 "toggle between last two buffers with comma-comma
 nmap <C-X> :b#<cr>
-
-
-" fix meta-keys which generate <Esc>a .. <Esc>z
-"let c='a'
-"while c <= 'z'
-"  exec "set <M-".toupper(c).">=\e".c
-"  exec "imap \e".c." <M-".toupper(c).">"
-"  let c = nr2char(1+char2nr(c))
-"endw
-
-" fix meta-keys which generate <Esc>0 .. <Esc>9
-"let c='0'
-"while c <= '9'
-"  exec "set <M-".toupper(c).">=\e".c
-"  exec "imap \e".c." <M-".toupper(c).">"
-"  let c = nr2char(1+char2nr(c))
-"endw
-
-"map 6 <M-6>
-"map! 6 <M-6>
-"map 7 <M-7>
-"map! 7 <M-7>
-"map 8 <M-8>
-"map! 8 <M-8>
-"map 9 <M-9>
-"map! 9 <M-9>
 
 "Smart mappings on the command line
 cno $h e ~/

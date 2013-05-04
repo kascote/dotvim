@@ -398,6 +398,9 @@ autocmd BufEnter *.rb map <Leader>rr :w<CR>:!ruby -w %<CR>
 autocmd BufEnter *.pl map <Leader>w :w<CR>:!perl -wc %<CR>
 autocmd BufEnter *.xml set equalprg=xmllint\ --format\ --recover\ -
 autocmd BufEnter *.json set equalprg=python\ -mjson.tool
+autocmd BufRead,BufNewFile *.mote setfiletype mote
+autocmd BufNewFile,BufRead *.rss setfiletype xml
+autocmd BufNewFile,BufRead *.atom setfiletype xml
 "When .vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vimrc
 " Remove trailing space before save
@@ -405,8 +408,6 @@ autocmd! bufwritepost vimrc source ~/.vimrc
 "autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd BufWritePre * :call <SID>Preserve("%s/\\s\\+$//e")
 
-autocmd BufNewFile,BufRead *.rss setfiletype xml
-autocmd BufNewFile,BufRead *.atom setfiletype xml
 
 autocmd FileType *
   \ if &omnifunc != '' |

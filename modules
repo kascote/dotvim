@@ -8,7 +8,7 @@ git submodule add git://github.com/vim-scripts/matchit.zip bundle/matchit
 git submodule add git://github.com/scrooloose/nerdcommenter bundle/nerdcommenter
 git submodule add git://github.com/scrooloose/nerdtree bundle/nerdtree
 git submodule add git://github.com/sunaku/QFixToggle bundle/qfixtoggle
-git submodule add git://github.com/msanders/snipmate.vim bundle/snipmate
+git submodule add git://github.com/garbas/vim-snipmate.git bundle/snipmate
 git submodule add git://github.com/ervandew/supertab.git bundle/supertab
 git submodule add git://github.com/scrooloose/syntastic bundle/syntastic
 git submodule add git://github.com/vim-scripts/taglist.vim bundle/taglist

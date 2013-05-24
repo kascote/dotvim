@@ -79,3 +79,6 @@
 [submodule "vim-json-bundle"]
 	path = vim-json-bundle
 	url = git://github.com/vim-scripts/vim-json-bundle.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/garbas/vim-snipmate.git

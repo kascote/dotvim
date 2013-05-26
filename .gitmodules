@@ -88,3 +88,6 @@
 [submodule "bundle/vim-addonn-mw-utils.git"]
 	path = bundle/vim-addonn-mw-utils.git
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/vim-golang"]
+	path = bundle/vim-golang
+	url = git://github.com/jnwhiteh/vim-golang.git

@@ -26,6 +26,7 @@ git submodule add git://github.com/tsaleh/vim-align.git bundle/vim-align
 git submodule add git://github.com/Lokaltog/vim-powerline.git bundle/vim-powerline
 git submodule add git://github.com/mikewest/vimroom.git bundle/vimroom
 git submodule add git://github.com/vim-scripts/vim-json-bundle.git
+git submodule add git://github.com/jnwhiteh/vim-golang.git bundle/vim-golang
 
 
 # There is not efficient way to remove a submodule

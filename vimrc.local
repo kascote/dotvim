@@ -91,7 +91,7 @@ set novisualbell            " don't blink
 set noerrorbells            " no noises
 set t_vb=                   " Evita los beeps y flashear la pantalla
 "set statusline=%#warningmsg#%{SyntasticStatuslineFlag()}%*%<%F%=\ [%M%n%R%H%W]\ %{&ff}\ %y\ %-19(%3l,%02c%03V%)[%o,%O]\ 0x%02B'%03b'  "Formato de la linea de status
-set statusline=%*%<%F%=\ [%M%n%R%H%W]\ %{&ff}\ %y\ %-19(%3l,%02c%03V%)[%o,%O]\ 0x%02B'%03b'  "Formato de la linea de status
+"set statusline=%*%<%F%=\ [%M%n%R%H%W]\ %{&ff}\ %y\ %-19(%3l,%02c%03V%)[%o,%O]\ 0x%02B'%03b'  "Formato de la linea de status
 set laststatus=2            " always show the status line
 "}}}
 "---[ Text Formatting/Layout ]-------------------------------------------- {{{

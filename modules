@@ -23,7 +23,6 @@ git submodule add git://github.com/tpope/vim-surround bundle/vim-surround
 git submodule add git://github.com/tpope/vim-unimpaired bundle/vim-unimpaired
 git submodule add git://github.com/leshill/vim-json.git bundle/vim-json
 git submodule add git://github.com/tsaleh/vim-align.git bundle/vim-align
-git submodule add git://github.com/Lokaltog/vim-powerline.git bundle/vim-powerline
 git submodule add git://github.com/mikewest/vimroom.git bundle/vimroom
 git submodule add git://github.com/vim-scripts/vim-json-bundle.git
 git submodule add git://github.com/jnwhiteh/vim-golang.git bundle/vim-golang

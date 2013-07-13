@@ -180,6 +180,12 @@ command! Ctags silent execute '!'.g:ctags_cmd.' *.'.expand('%:e')
 "---[ Supertab ]---------------------------------------------------------- {{{
 "}}}
 
+"---[ airline ]---------------------------------------------------------- {{{
+let g:airline_enable_syntastic=1
+let g:airline_theme='dark'
+"}}}
+
+
 "---[ Syntastic    ]------------------------------------------------------ {{{
 let g:syntastic_javascript_gjslint_conf=" --nojsdoc"
 let g:syntastic_error_symbol='✗'

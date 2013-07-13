@@ -182,7 +182,7 @@ command! Ctags silent execute '!'.g:ctags_cmd.' *.'.expand('%:e')
 
 "---[ airline ]---------------------------------------------------------- {{{
 let g:airline_enable_syntastic=1
-let g:airline_theme='dark'
+let g:airline_theme='simple'
 "}}}
 
 
